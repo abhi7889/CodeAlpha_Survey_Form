@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey Form</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Survey Form</h1>
+    <form>
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" required>
+
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" required>
+
+      <label for="age">Age:</label>
+      <input type="text" id="age" name="age" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="experience">Years of Experience:</label>
+      <select id="experience" name="experience">
+        <option disabled selected value>Select an option</option>
+        <option value="0-1">0-1 years</option>
+        <option value="1-3">1-3 years</option>
+        <option value="3-5">3-5 years</option>
+        <option value="5+">5+ years</option>
+      </select>
+
+      <label for="role">Desired Role:</label>
+      <select id="role" name="role">
+        <option disabled selected value>Select an option</option>
+        <option value="front-end">Front-End</option>
+        <option value="back-end">Back-End</option>
+        <option value="full-stack">Full-Stack</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="programmingLanguages">Preferred Programming Languages:</label>
+      <select id="programmingLanguages" name="programmingLanguages">
+        <option disabled selected value>Select an option</option>
+        <option value="javascript">JavaScript</option>
+        <option value="python">Python</option>
+        <option value="java">Java</option>
+        <option value="java">C++</option>
+      </select>
+
+      <label for="howDidYouHear">How did you hear about this Organization?</label>
+      <select id="howDidYouHear" name="howDidYouHear">
+        <option disabled selected value>Select an option</option>
+        <option value="friend">From a friend</option>
+        <option value="socialMedia">Social Media</option>
+        <option value="website">Website</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="feedback">What interest you to join this Organization ?</label>
+      <textarea id="feedback" name="feedback" rows="4"></textarea>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>
